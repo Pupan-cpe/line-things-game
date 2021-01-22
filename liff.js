@@ -134,7 +134,7 @@ function makeErrorMsg(errorObj) {
 // -------------- //
 
 function initializeApp() {
-    liff.init({ liffId: "1655600021-7ENMXj9b" },() => initializeLiff(), error => uiStatusError(makeErrorMsg(error), false));
+    liff.init({ liffId: "" },() => initializeLiff(), error => uiStatusError(makeErrorMsg(error), false));
 }
 
 function initializeLiff() {
