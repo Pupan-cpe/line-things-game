@@ -134,7 +134,15 @@ function makeErrorMsg(errorObj) {
 // -------------- //
 
 function initializeApp() {
-    liff.init({ liffId: "1655600021-7ENMXj9b" },() => initializeLiff(), error => uiStatusError(makeErrorMsg(error), false));
+    // liff.init({ liffId: "1655600021-7ENMXj9b" },() => initializeLiff(), error => uiStatusError(makeErrorMsg(error), false));
+    liff.init({ liffId: "1655590044-XmLRjPqP" } , () => {     //ใส่ข้อมูล liff ID 
+        if (liff.isLoggedIn()) {
+          runApp()
+        } else {
+          liff.login();
+        }
+      }
+
 }
 
 function initializeLiff() {
