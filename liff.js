@@ -141,7 +141,7 @@ function initializeApp() {
         } else {
           liff.login();
         }
-      },error => uiStatusError(makeErrorMsg(error), false));;
+      },error => uiStatusError(makeErrorMsg("error"), false));;
 
     }
     
